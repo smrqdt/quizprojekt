@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Quiz ohne Ende</title>
+		<link href="normalize.css" rel="stylesheet" /> <!-- setzt browser-standardeinstellungen auf gemeinsame grundeinstellungen -->
+		<link href="style.css" rel="stylesheet" />
+	
+	</head>
+	<body>
+		<div id="everything">
+			<nav id="topnav">
+				<span class="navitem"><a href="index.xhtml" id="link_nav_home">Startseite</a></span>
+				<span class="navitem"><a href="game.xhtml" id="link_nav_game">Spiel</a></span>
+				<span class="navitem"><a href="manual.xhtml" id="link_nav_manual">Anleitung</a></span>
+				<span class="navitem"><a href="legal.xhtml" id="link_nav_legal">Impressum</a></span>
+			</nav>
+			<h1>Quiz ohne Ende</h1>
+			<div id="main">
+				<div id="main_points" class="mainbox">
+					<div id="points_round" class="pointsbox">
+						<p id="points_round_text" class="points_text">Frage</p>
+						<p id="points_round_points" class="points_points">001</p>
+					</div>
+					<div id="points_best" class="pointsbox">
+						<p id="points_best_text" class="points_text">Dein Highscore</p>
+						<p id="points_best_points" class="points_points">023</p>
+					</div>
+				</div>
+				<div id="main_question" class="mainbox">
+					<p id="question">
+						Wie hieß <em>kein</em> Space Shuttle?
+					</p>
+					<div id="answerbox">
+						<div id="ans1" class="answer">
+							<div class="answer_char">A</div>
+							<div id="ans1_text" class="answer_text">Atlantis</div>
+						</div>
+						<div id="ans2" class="answer">
+							<div class="answer_char">B</div>
+							<div id="ans2_text" class="answer_text">Enterprise</div>
+						</div>
+						<div id="ans3" class="answer">
+							<div class="answer_char">C</div>
+							<div id="ans3_text" class="answer_text">Endeavour</div>
+						</div>
+						<div id="ans4" class="answer">
+							<div class="answer_char">D</div>
+							<div id="ans4_text" class="answer_text">Bounty</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="interface.js" type="text/javascript" charset="utf-8" />
+	</body>
+</html>
