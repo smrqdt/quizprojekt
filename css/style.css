@@ -126,7 +126,7 @@ h1 {
 	text-align: center;
 }
 
-#answerbox {
+#answerbox_bool {
 
 	display: -webkit-flex;
 	-webkit-flex-direction: row;

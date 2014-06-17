@@ -1,0 +1,76 @@
+var questions = [
+	{
+		"lang": "de",
+		"type": "bool",
+		"quest": "Wie hieß <em>kein</em> Space Shuttle?",
+		"answers": 
+		[
+			{
+				"ans": "Atlantis",
+				"correct": false
+			}, {
+				"ans": "Enterprise",
+				"correct": false
+			}, {
+				"ans": "Endeavour",
+				"correct": false
+			}, {
+				"ans": "Bounty",
+				"correct": true
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}, {
+				"ans": "foobar",
+				"correct": false
+			}
+		]
+	}, {
+		"lang": "de",
+		"type": "bool",
+		"quest": "Welche Fernsehserie ist die weltweit am längste laufende Science-Fiction-Serie?",
+		"answers":
+		[
+			{
+				"ans": "Star Trek",
+				"correct": false
+			}, {
+				"ans": "Doctor Who",
+				"correct": true
+			}, {
+				"ans": "Star Gate",
+				"correct": false,
+			}, {
+				"ans": "Star Wars",
+				"corrent": false
+			}
+		]
+	}
+]
