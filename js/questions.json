@@ -17,45 +17,12 @@ var questions = [
 			}, {
 				"ans": "Bounty",
 				"correct": true
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
-			}, {
-				"ans": "foobar",
-				"correct": false
 			}
 		]
 	}, {
 		"lang": "de",
 		"type": "bool",
-		"quest": "Welche Fernsehserie ist die weltweit am längste laufende Science-Fiction-Serie?",
+		"quest": "Welche Fernsehserie ist die weltweit am längsten laufende Science-Fiction-Serie?",
 		"answers":
 		[
 			{
@@ -72,5 +39,94 @@ var questions = [
 				"corrent": false
 			}
 		]
-	}
+	}, /*{
+		"lang": "de",
+		"type": "bool",
+		"quest": "foo?",
+		"answers": [
+			{
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": false
+			}, {
+				"ans": "bar",
+				"correct": true
+			}
+		]
+
+	}*/
 ]

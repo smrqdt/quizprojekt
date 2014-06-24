@@ -33,6 +33,7 @@ img {
 	width:900px;
 	margin: auto;
 	padding: 3px;
+	min-height: 800px;
 }
 
 #topnav {
@@ -64,6 +65,8 @@ img {
 h1 {
 	font-size: 400%;
 	font-weight: bold;
+	letter-spacing: 0.1em;
+
 	margin-left: 116px;
 }
 
@@ -124,6 +127,7 @@ h1 {
 	font-size: 250%;
 	font-weight: lighter;
 	text-align: center;
+	margin: 0.7em 0.2em;
 }
 
 #answerbox_bool {
@@ -147,7 +151,7 @@ h1 {
 }
 
 .answer {
-	font-size: 200%;
+	font-size: 230%;
 	padding: 10px;
 	border: dashed 3px black;
 	border-radius: 8px;
@@ -162,12 +166,9 @@ h1 {
 
 	display: flex;
 	flex-direction: row;
-}
 
-#answer_text {
- 	margin: auto 4px;
+	align-items: center;
 }
-
 
 .answer_char {
 	box-sizing: border-box;
@@ -182,12 +183,70 @@ h1 {
 	font-size: 100%;
 	text-align:center;
 	margin: auto 6px;
-	padding-top: 5px;
+	padding-top: 3px;
 	float:left;
 	overflow: hidden;
 }
 
-.answer:hover {
-	border: solid;
+.answer_text {
+	padding-left: 5px;
 }
 
+.answer.chooseable:hover {
+	border: solid;
+	background-color: #606060;
+	cursor: pointer;
+}
+
+.answer.chooseable:hover .answer_text {
+    text-shadow: 0 0 0.6em #FFFFFF, 0 0 0.6em #FFFFFF, 0 0 0.6em #FFFFFF;
+
+}
+
+.right {
+	background-color: #33cc33;
+}
+
+.wrong {
+	background-color: #cc0000;
+}
+
+.alsoright {
+	background-color: #70cc70;
+}
+
+.banner {
+	display:none;
+	text-align: center;
+	font-size: 500%;
+	margin: 0.1em;
+	font-variant: small-caps;
+}
+
+#banner_right {
+	color:#33cc33;
+}
+
+#banner_wrong {
+	color: #cc0000;
+}
+
+#button_next {
+	text-align: center;
+	cursor: pointer;
+	display: none;
+}
+
+#button_next span {
+	font-size: 150%;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 6px;
+}
+
+#button_next:hover span {
+	background-color: #606060;
+    text-shadow: 0 0 0.8em #000000, 0 0 0.8em #000000, 0 0 0.8em #000000;
+
+}

@@ -15,49 +15,24 @@
 				<a href="manual.xhtml" id="link_nav_manual" class="navitem">Anleitung</a>
 				<a href="legal.xhtml" id="link_nav_legal" class="navitem">Impressum</a>
 			</nav>
-			<h1>Quiz ohne Ende</h1>
+			<h1>Flappy Quiz</h1>
 			<div id="main">
 				<div id="main_points" class="mainbox">
 					<div id="points_round" class="pointsbox">
-						<p id="points_round_text" class="points_text">Frage</p>
-						<p id="points_round_points" class="points_points">001</p>
+						<p id="points_round_text" class="points_text">Aktuelle Reihe</p>
+						<p id="points_round_points" class="points_points">0</p>
 					</div>
 					<div id="points_best" class="pointsbox">
 						<p id="points_best_text" class="points_text">Dein Highscore</p>
-						<p id="points_best_points" class="points_points">023</p>
+						<p id="points_best_points" class="points_points">0</p>
 					</div>
 				</div>
 				<div id="main_question" class="mainbox">
-					<p id="question">
-						Wie hieß <em>kein</em> Space Shuttle?
-					</p>
-					<div id="answerbox_bool">
-					</div>
-						<!--<div class="answer_container">
-							<div id="ans1" class="answer">
-								<div class="answer_char">A</div>
-								<div id="ans1_text" class="answer_text">Atlantis</div>
-							</div>
-						</div>
-						<div class="answer_container">
-							<div id="ans2" class="answer">
-								<div class="answer_char">B</div>
-								<div id="ans2_text" class="answer_text">Enterprise</div>
-							</div>
-						</div>
-						<div class="answer_container">
-							<div id="ans3" class="answer">
-								<div class="answer_char">C</div>
-								<div id="ans3_text" class="answer_text">Endeavour</div>
-							</div>
-						</div>
-						<div class="answer_container">
-							<div id="ans4" class="answer">
-								<div class="answer_char">D</div>
-								<div id="ans4_text" class="answer_text">Bounty</div>
-							</div>
-						</div>
-					</div> -->
+					<p id="question" />
+					<p class="banner" id="banner_right">Richtig!</p>
+					<p class="banner" id="banner_wrong">Falsch!</p>
+					<p id="button_next"><span onclick="newQuestion()">Nächste Frage…</span></p>
+					<div id="answerbox_bool" />
 				</div>
 			</div>
 		</div>
