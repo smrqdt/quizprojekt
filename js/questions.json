@@ -61,7 +61,7 @@ var questions = [
 				"correct": true
 			}, {
 				"ans": "Bell",
-				"correct": true
+				"correct": false
 			}
 		]
 	}
