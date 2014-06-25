@@ -19,9 +19,8 @@
 			<div id="main">
 				<div id="main_points" class="mainbox">
 					<div id="points_best" class="pointsbox">
-					<!--	<p id="points_best_text" class="points_text">Dein Highscore</p>
-						<p id="points_best_points" class="points_points">023</p>
-					-->
+						<p id="points_best_text" class="points_text">Dein Highscore</p>
+						<p id="points_best_points" class="points_points">0</p>
 					</div>
 				</div>
 				<div id="main_question" class="mainbox">
@@ -31,6 +30,10 @@
 				</div>
 			</div>
 		</div>
-		<script src="interface.js" type="text/javascript" charset="utf-8" />
+		<script src="js/game.js" type="text/javascript" charset="utf-8" />
+		<script type="text/javascript">
+			restorePlayer();
+			showPoints();
+		</script>
 	</body>
 </html>

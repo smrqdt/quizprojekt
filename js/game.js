@@ -67,7 +67,9 @@ var restorePlayer = function () {
 };
 
 var showPoints = function() {
-	document.getElementById("points_round_points").innerHTML = player.points;
+	if (document.getElementById("points_round_points")) {
+		document.getElementById("points_round_points").innerHTML = player.points;
+	}
 	document.getElementById("points_best_points").innerHTML = player.best;
 }
 
@@ -170,7 +172,9 @@ var userAnswer = function (type, answer) {
 	}
 }
 
+var startGame = function () {
 console.log("Cookie: "+document.cookie)
 restorePlayer();
 showPoints();
 newQuestion();
+}
