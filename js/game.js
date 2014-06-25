@@ -13,11 +13,13 @@ var getAnsChar = function (num) {
 	return chars[num-1];
 }
 
+// mark annswers by colour
 var markAnswer = function (answer, markAs) {
 	console.log("markAnswer(answer="+answer+",markAs="+markAs+");");
 	document.getElementById("ans"+answer).classList.add(markAs);
 }
 
+// read all cookies into object
 var readCookies = function () {
 	var cookies = document.cookie.split(";")
 	var cookiesObject = []
@@ -32,6 +34,7 @@ var readCookies = function () {
 	return cookiesObject;
 }
 
+// get the value of a specific cookie
 var getCookie = function (cookieName) {
 	console.log("getCookie(cookieName="+cookieName+")")
 	cookiesObject = readCookies();
@@ -42,20 +45,24 @@ var getCookie = function (cookieName) {
 	}
 }
 
+// store name-value-pair as cookie
 var storeCookie = function (name, value) {
 	document.cookie = name+"="+escape(value);
 }
 
+// store player-object as cookie
 var storePlayer = function () {
 	storeCookie("player", JSON.stringify(player));
 }
 
+// load player object from cookie or create one if not existent
 var restorePlayer = function () {
 	console.log(getCookie("player"));
 	cookiePlayer = getCookie("player");
 
 	if (cookiePlayer != undefined) {
 		player = JSON.parse(cookiePlayer);
+		player["points"] = 0; // maybe sometime we also reload the same question… until then: better defeat cheating method, allows choosing another question
 	} else {
 		player = {
 			"best": 0,
@@ -66,6 +73,7 @@ var restorePlayer = function () {
 
 };
 
+// show points and highscore on page
 var showPoints = function() {
 	if (document.getElementById("points_round_points")) {
 		document.getElementById("points_round_points").innerHTML = player.points;
@@ -73,6 +81,7 @@ var showPoints = function() {
 	document.getElementById("points_best_points").innerHTML = player.best;
 }
 
+// set new points value and call highscore saving method
 var setPoints = function (points) {
 	console.log("setPoints("+points+")");
 	player.points = points;
@@ -81,6 +90,7 @@ var setPoints = function (points) {
 	showPoints();
 }
 
+// save points as highscore if hugher than old one
 var checkBest = function (points) {
 	if (points > player.best) {
 		player.best = points;
@@ -172,6 +182,7 @@ var userAnswer = function (type, answer) {
 	}
 }
 
+// things to do at game start
 var startGame = function () {
 console.log("Cookie: "+document.cookie)
 restorePlayer();

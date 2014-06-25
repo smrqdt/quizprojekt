@@ -39,94 +39,30 @@ var questions = [
 				"corrent": false
 			}
 		]
-	}, /*{
+	}, {
 		"lang": "de",
 		"type": "bool",
-		"quest": "foo?",
+		"quest": "Welche Einheit wird für den Leitwert genutzt?",
 		"answers": [
 			{
-				"ans": "bar",
+				"ans": "Ohm",
 				"correct": false
 			}, {
-				"ans": "bar",
+				"ans": "Volt",
 				"correct": false
 			}, {
-				"ans": "bar",
+				"ans": "Siemens",
+				"correct": true
+			}, {
+				"ans": "Ampere",
 				"correct": false
 			}, {
-				"ans": "bar",
-				"correct": false
+				"ans": "Mho",
+				"correct": true
 			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
-				"correct": false
-			}, {
-				"ans": "bar",
+				"ans": "Bell",
 				"correct": true
 			}
 		]
-
-	}*/
+	}
 ]

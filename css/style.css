@@ -120,7 +120,17 @@ h1 {
 
 .teaser {
 	font-size: 56pt;
+	padding: 1px;
+}
 
+.teaser_small {
+	font-size: 32pt;
+	padding: 1px;
+}
+
+.footnote {
+	font-size: 8pt;
+	text-align: right;
 }
 
 #question {
