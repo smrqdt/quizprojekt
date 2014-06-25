@@ -1,10 +1,4 @@
-
-var player = {
-	"best": 0,
-	"round": 0,
-	"answered": []
-};
-
+var player;
 var gamestate = {
 	"round": 0
 }
@@ -24,25 +18,71 @@ var markAnswer = function (answer, markAs) {
 	document.getElementById("ans"+answer).classList.add(markAs);
 }
 
-var storeGamestate = function () {
-	document.cookie=JSON.stringify("gamestate="+gamestate);
+var readCookies = function () {
+	var cookies = document.cookie.split(";")
+	var cookiesObject = []
+
+	for (var i=0; i<cookies.length; i++) {
+		cookie = cookies[i];
+		cookiesObject.push({
+			"name" : cookie.split("=")[0],
+			"value" : unescape(cookie.split("=")[1])
+		})
+	}
+	return cookiesObject;
 }
 
-var restoreGamestate = function () {
-	console.log(document.cookie);
+var getCookie = function (cookieName) {
+	console.log("getCookie(cookieName="+cookieName+")")
+	cookiesObject = readCookies();
+	for (var i=0; i<cookiesObject.length; i++) {
+		if (cookiesObject[i]["name"] == cookieName) {
+			return cookiesObject[i]["value"];
+		}
+	}
+}
+
+var storeCookie = function (name, value) {
+	document.cookie = name+"="+escape(value);
+}
+
+var storePlayer = function () {
+	storeCookie("player", JSON.stringify(player));
+}
+
+var restorePlayer = function () {
+	console.log(getCookie("player"));
+	cookiePlayer = getCookie("player");
+
+	if (cookiePlayer != undefined) {
+		player = JSON.parse(cookiePlayer);
+	} else {
+		player = {
+			"best": 0,
+			"points": 0,
+			"answered": []
+		};
+	}
+
 };
 
+var showPoints = function() {
+	document.getElementById("points_round_points").innerHTML = player.points;
+	document.getElementById("points_best_points").innerHTML = player.best;
+}
+
 var setPoints = function (points) {
+	console.log("setPoints("+points+")");
 	player.points = points;
-	document.getElementById("points_round_points").innerHTML = points;
 
 	checkBest(points);
+	showPoints();
 }
 
 var checkBest = function (points) {
 	if (points > player.best) {
 		player.best = points;
-		document.getElementById("points_best_points").innerHTML = points;
+		showPoints();
 	}
 }
 
@@ -106,13 +146,15 @@ var userAnswer = function (type, answer) {
 			document.getElementById("banner_right").style.display = "block";
 			answerCorrect = true;
 
-			setPoints(player.round+1);
+			setPoints(player["points"]+1);
+			storePlayer();
 		} else {
 			markAnswer(answer, "wrong");
 			document.getElementById("banner_wrong").style.display = "block";
 			answerCorrect = false;
 			
 			setPoints(0);
+			storePlayer();
 		}
 
 		// colour all correct answers green
@@ -128,4 +170,7 @@ var userAnswer = function (type, answer) {
 	}
 }
 
+console.log("Cookie: "+document.cookie)
+restorePlayer();
+showPoints();
 newQuestion();
