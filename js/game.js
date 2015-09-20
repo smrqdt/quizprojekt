@@ -130,7 +130,7 @@ var newQuestion = function () {
 
 			gamestate.currentAnswers[i]=aid;
 
-			document.getElementById("answerbox_bool").innerHTML += '<div class="answer_container"><div id="ans'+i+'" class="answer chooseable" onclick="userAnswer(\'bool\','+i+')"><div class="answer_char">'+getAnsChar(i)+'</div><div id="ans'+i+'_text" class="answer_text">'+questions[qid].answers[aid].ans+'</div></div></div>'
+			document.getElementById("answerbox_bool").innerHTML += '<div class="answer_container"><div id="ans'+i+'" class="answer chooseable" onclick="userAnswer(\'bool\','+i+')"><div class="answer_char"><p>'+getAnsChar(i)+'</p></div><div id="ans'+i+'_text" class="answer_text">'+questions[qid].answers[aid].ans+'</div></div></div>'
 		}
 	}
 }
