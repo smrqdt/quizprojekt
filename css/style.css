@@ -192,10 +192,10 @@ h1 {
 	color: white;
 	font-size: 100%;
 	text-align:center;
-	margin: auto 6px;
-	padding-top: 3px;
 	float:left;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 
 .answer_text {
